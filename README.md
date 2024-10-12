@@ -16,12 +16,18 @@ This API provides basic CRUD operations for managing students.
 
 ## Swagger Documentation:
 
-(![Swagger Screenshot](image.png))
-(![Swagger Screenshot 1](image-1.png))
-(![Swagger Screenshot 2](<(image-2.png)>))
-(![Swagger Screenshot 3](<(image-3.png)>))
-(![Swagger Screenshot 4](<(image-4.png)>))
-(![Swagger Screenshot 5](<(image-5.png)>))
+![image](https://github.com/user-attachments/assets/2efc4aca-e1e7-4910-a4a9-f17ceec4cea7)
+![image](https://github.com/user-attachments/assets/e18fb7e1-0d4a-42d9-a40a-cbe84a185f32)
+![image](https://github.com/user-attachments/assets/2b7be19f-b39c-4a3f-9efa-4fb2283ef09e)
+![image](https://github.com/user-attachments/assets/8b2b3853-3092-469e-982a-17c8bcf2f587)
+![image](https://github.com/user-attachments/assets/66175dab-646f-4c16-a782-1dc56eeb8e5f)
+![image](https://github.com/user-attachments/assets/62c2ab2c-a21e-4c29-a342-2792782d5570)
+
+
+
+
+
+
 
 ## Installation:
 
