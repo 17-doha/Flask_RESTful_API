@@ -1,0 +1,125 @@
+openapi: 3.0.0
+info:
+  version: 1.0.0
+  title: Student API
+  description: A simple API to manage students
+servers:
+  - url: http://localhost:5000
+paths:
+  /students:
+    get:
+      summary: Get all students
+      responses:
+        "200":
+          description: List of students
+          content:
+            application/json:
+              schema:
+                type: array
+                items:
+                  $ref: "#/components/schemas/Student"
+    post:
+      summary: Create a new student
+      requestBody:
+        description: Student data
+        required: true
+        content:
+          application/json:
+            schema:
+              $ref: "#/components/schemas/StudentInput"
+      responses:
+        "201":
+          description: Student created successfully
+          content:
+            application/json:
+              schema:
+                $ref: "#/components/schemas/Student"
+        "400":
+          description: Missing required fields
+  /students/{id}:
+    get:
+      summary: Get a student by ID
+      parameters:
+        - name: id
+          in: path
+          required: true
+          schema:
+            type: integer
+      responses:
+        "200":
+          description: Student found
+          content:
+            application/json:
+              schema:
+                $ref: "#/components/schemas/Student"
+        "404":
+          description: Student not found
+    put:
+      summary: Update a student by ID
+      parameters:
+        - name: id
+          in: path
+          required: true
+          schema:
+            type: integer
+      requestBody:
+        description: Student data to update
+        required: true
+        content:
+          application/json:
+            schema:
+              $ref: "#/components/schemas/StudentInput"
+      responses:
+        "200":
+          description: Student updated successfully
+          content:
+            application/json:
+              schema:
+                $ref: "#/components/schemas/Student"
+        "404":
+          description: Student not found
+    delete:
+      summary: Delete a student by ID
+      parameters:
+        - name: id
+          in: path
+          required: true
+          schema:
+            type: integer
+      responses:
+        "204":
+          description: Student deleted successfully
+        "404":
+          description: Student not found
+components:
+  schemas:
+    Student:
+      type: object
+      properties:
+        id:
+          type: integer
+          example: 1
+        name:
+          type: string
+          example: "Doha Hemdan"
+        major:
+          type: string
+          example: "DSAI"
+        status:
+          type: string
+          example: "Undergraduate"
+    StudentInput:
+      type: object
+      required:
+        - name
+        - major
+      properties:
+        name:
+          type: string
+          example: "Doha Hemdan"
+        major:
+          type: string
+          example: "DSAI"
+        status:
+          type: string
+          example: "Undergraduate"
