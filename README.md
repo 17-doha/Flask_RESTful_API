@@ -18,10 +18,10 @@ This API provides basic CRUD operations for managing students.
 
 (![Swagger Screenshot](image.png))
 (![Swagger Screenshot 1](image-1.png))
-(![Swagger Screenshot 2](![alt text](image-2.png)))
-(![Swagger Screenshot 3](![alt text](image-3.png)))
-(![Swagger Screenshot 4](![alt text](image-4.png)))
-(![Swagger Screenshot 5](![alt text](image-5.png)))
+(![Swagger Screenshot 2]((image-2.png)))
+(![Swagger Screenshot 3]((image-3.png)))
+(![Swagger Screenshot 4]((image-4.png)))
+(![Swagger Screenshot 5]((image-5.png)))
 
 ## Installation:
 
